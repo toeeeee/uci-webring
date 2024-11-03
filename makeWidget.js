@@ -58,7 +58,7 @@ class WebRing extends HTMLElement {
                 if (nextSiteI >= sites.length) nextSiteI = 0;
 
                 const randomSiteI = this.getRandomInt(0, sites.length-1);
-                while (randomSiteI === matchedSiteI) { randomSiteI = this.getRandomInt(0, sites.length-1); }
+                //while (randomSiteI === matchedSiteI) { randomSiteI = this.getRandomInt(0, sites.length-1); }
 
                 const prevSite = sites[prevSiteI];
                 const nextSite = sites[nextSiteI];
