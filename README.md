@@ -26,7 +26,7 @@ Once approved, add the following code to your website (with the sitename changed
     </div>
 ```
 
-I would recommend downloading the makeWidget.js script incase combinatronics goes down + it is much easier to handle the styling there.
+I would recommend downloading the makeWidget.js script incase combinatronics goes down + it is much easier to handle the styling there. It might be downright impossible to style a shadow DOM xp
 
 #### yipee!
 ***
