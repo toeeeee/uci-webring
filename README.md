@@ -18,10 +18,12 @@ To join, make a pull request to webring.json and adding an entry in the format o
 Once approved, add the following code to your website (with the sitename changed) to add the webring to your website. 
 
 ```html
-    <webring-uci site="anguyen2000.dev">
-        <script type="text/javascript" src="https://raw.githubusercontent.com/toeeeee/uci-webring/refs/heads/main/makeWidget.js"></script>
-        This turns into a webring.
-    </webring-uci>
+    <div>
+      <script type="text/javascript" src="https://combinatronics.com/toeeeee/uci-webring/refs/heads/main/makeWidget.js"></script>
+      <webring-uci site="anguyen2000.dev">
+        blah blah blah.. your website might not be in the ring!
+      </webring-uci>
+    </div>
 ```
 
 #### yipee!
