@@ -8,9 +8,12 @@ template.innerHTML = `
 .webring {
     display: grid;
     text-align: center;
-    font: 100% system-ui, sans-serif;
+    font: 90% system-ui, sans-serif;
     border: 1px solid;
     padding: 1rem;
+
+    width: 30%;
+    height: 4%;
 }
 </style>
 
