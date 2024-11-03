@@ -19,7 +19,7 @@ Once approved, add the following code to your website (with the sitename changed
 
 ```html
     <webring-uci site="anguyen2000.dev">
-        <script type="text/javascript src="https://raw.githubusercontent.com/toeeeee/uci-webring/refs/heads/main/makeWidget.js"> 
+        <script type="text/javascript" src="https://raw.githubusercontent.com/toeeeee/uci-webring/refs/heads/main/makeWidget.js"></script>
         This turns into a webring.
     </webring-uci>
 ```
