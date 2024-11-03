@@ -45,6 +45,7 @@ class WebRing extends HTMLElement {
         const matchedSiteIndex = sites.findIndex(
           (site) => site.url === thisSite
         );
+        
         const matchedSite = sites[matchedSiteIndex];
 
         let prevSiteIndex = matchedSiteIndex - 1;
@@ -54,6 +55,11 @@ class WebRing extends HTMLElement {
         if (nextSiteIndex > sites.length) nextSiteIndex = 0;
 
         const randomSiteIndex = this.getRandomInt(0, sites.length - 1);
+
+        console.log(prevSiteIndex);
+        console.log(nextSiteIndex);
+        console.log(randomSiteIndex);
+
 
         const cp = `
           <h1>The Great CSS Webring</h1>

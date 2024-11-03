@@ -1,4 +1,4 @@
-const DATA = `https://raw.githubusercontent.com/toeeeee/uci-webring/main/data.json`;
+const DATA = `https://raw.githubusercontent.com/toeeeee/uci-webring/main/webring.json`;
 
 // Widget stuff
 const template = document.createElement("template");
@@ -34,8 +34,9 @@ class WebRing extends HTMLElement {
                 const matchedSiteI = sites.findIndex(
                     (site) => site.url === thisSite
                 );
+
                 const matchedSite = sites[matchedSiteI];
-            
+
                 let prevSiteI = matchedSiteI-1; 
                 if (prevSiteI === -1) prevSiteI = sites.length - 1; // Wrap around
 
@@ -43,7 +44,7 @@ class WebRing extends HTMLElement {
                 if (nextSiteI >= sites.length) nextSiteI = 0;
 
                 const randomSiteI = this.getRandomInt(0, sites.length-1);
-
+                
                 // MODIFY HTML HERE TO ADD IMAGES, ETC
                 const cp = `
                 <h1> Zot zot zot! </h1>
