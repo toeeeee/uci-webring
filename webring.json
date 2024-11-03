@@ -2,11 +2,13 @@
     {
         "name": "Anthony Nguyen",
         "url": "https://www.anguyen2000.dev",
-        "owner": "Anthony Nguyen"
+        "owner": "Anthony Nguyen",
+        "year": 2026
     },
     {
         "name": "Jose Gonalez",
         "url": "https://www.jose-gonzalez.xyz/",
-        "owner": "Jose Gonalez"
+        "owner": "Jose Gonalez",
+        "year": 2025
     }
 ]

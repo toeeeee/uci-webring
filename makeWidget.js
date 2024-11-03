@@ -69,6 +69,10 @@ class WebRing extends HTMLElement {
                     <a href="${sites[nextSiteI].url}">[Next]</a>
                     <a href="${sites[randomSiteI].url}">[I'm feeling lucky]</a>
                 </p>
+
+                <p>
+                    Class of ${matchedSite.year}!
+                </p>
                 `;
 
                 this.shadowRoot
