@@ -25,6 +25,15 @@ Once approved, add the following code to your website (with the sitename changed
       </webring-uci>
     </div>
 ```
+#### Alternative
+```html
+    <div>
+      <script type="text/javascript" src="/makeWidget.js"></script>
+      <webring-uci site="anguyen2000.dev">
+        blah blah blah.. your website might not be in the ring!
+      </webring-uci>
+    </div>
+```
 
 I would recommend downloading the makeWidget.js script incase combinatronics goes down + it is much easier to handle the styling there. It might be downright impossible to style a shadow DOM xp
 
