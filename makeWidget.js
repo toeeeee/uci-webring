@@ -1,7 +1,9 @@
 // By default, the webring fetches from this LINK, but you can fetch a local .json if wanted :)
 const DATA = `https://raw.githubusercontent.com/toeeeee/uci-webring/main/webring.json`;
 
-// Widget stuff
+
+// Widget stuff for shadow root implementation
+// STYLE HERE
 const template = document.createElement("template");
 template.innerHTML = `
 <style>
