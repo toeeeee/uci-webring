@@ -26,7 +26,8 @@ class WebRing extends HTMLElement {
         this.attachShadow({ mode: "open" });
         this.shadowRoot.appendChild(template.content.cloneNode(true));
 
-        const thisSite = this.getAttribute("site");
+        var thisSite = this.getAttribute("site");
+        console.log(thisSite);
 
         fetch(DATA)
             .then((response) => {
@@ -37,8 +38,9 @@ class WebRing extends HTMLElement {
                 // Current site find in JSON
                 const matchedSiteI = sites.findIndex(
                     (site) => {
-                        console.log(site);
-                        return (site.url === thisSite);
+                        const re = /^https:\/\/www.|\/$/g;
+                        console.log(site.url.replace(re, ''));
+                        return (site.url.replace(re,'') === thisSite);
                     }
                 );
 
@@ -57,6 +59,13 @@ class WebRing extends HTMLElement {
                 const nextSite = sites[nextSiteI];
                 const randomSite = sites[randomSiteI];
 
+                /*console.log(matchedSiteI);
+                console.log(prevSiteI);
+                console.log(nextSiteI);
+                console.log(randomSiteI);
+                console.log(sites)
+                console.log(matchedSite); print block because im going insane lol*/
+
                 // MODIFY HTML HERE TO ADD IMAGES, ETC
                 const cp = `
                 <h1> Zot zot zot! </h1>
@@ -70,9 +79,7 @@ class WebRing extends HTMLElement {
                     <a href="${sites[randomSiteI].url}">[I'm feeling lucky]</a>
                 </p>
 
-                <p>
-                    Class of ${matchedSite.year}!
-                </p>
+                <p> Class of ${matchedSite.year}!</p>
                 `;
 
                 this.shadowRoot
