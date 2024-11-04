@@ -4,7 +4,7 @@
 ![image](https://github.com/user-attachments/assets/4f4b357a-e321-4647-a3ca-e6e4551fe53d)
 
 ### Joining the webring
-To join, make a pull request to webring.json and add an entry in the format of 
+To join, fork and make a pull request for webring.json and add an entry in the format of 
 ```json
 {
   "name": "John Doe",
