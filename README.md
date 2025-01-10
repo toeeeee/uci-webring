@@ -25,7 +25,7 @@ Once approved, add the following code to your website (with the sitename changed
       </webring-uci>
     </div>
 ```
-#### Alternative
+#### .js File
 ```html
     <div>
       <script type="text/javascript" src="/makeWidget.js"></script>
